@@ -1,0 +1,31 @@
+print("===CAR FAULT DIAGNOSE EXPERT SYSTEM===")
+battery = input("is battery working properly(yes/no)")
+fuel = input("is fuel available(yes/no)")
+engine = input("is the engine overheating(yes/no)")
+sound = input("is there any sound(yes/no)")
+start = input("is car starting(yes/no)")
+
+print("===DIAGNOSIS===")
+#rule1 
+if battery == "no":
+    print("problem: battery is weak or dead")
+    print("solution: replace or recharge battery")
+#rule2 
+elif fuel == "no":
+    print("problem: fuel is empty")
+    print("solution: refuel the tank")
+#rule3
+elif engine == "no":
+    print("problem: engine is overheating")
+    print("solution: check coolant level and radiator")
+#rule4
+elif sound == "no":
+    print("problem: engine noise")
+    print("solution: check ignition and starter motor")
+#rule5
+elif start == "no":
+    print("problem: car is not starting")
+    print("solution: check ignition switch and battery connections")
+
+else:
+    print("no major fault detected, car is functioning properly")
